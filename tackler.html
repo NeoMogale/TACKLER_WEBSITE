@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tackler!</title>
+    <link rel="stylesheet" href="site.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.0/core/main.min.css">
+    <link rel="stylesheet" href="chatbot.css"> <!-- New CSS file for chatbot styling -->
+</head>
+<body>
+<div class="container">
+    <h1>To-Do List</h1>
+    <form id="todo-form">
+        <input type="text" id="todo-input" placeholder="Add new task...">
+        <select id="priority">
+            <option value="normal">Normal</option>
+            <option value="urgent">Urgent</option>
+        </select>
+        <input type="datetime-local" id="scheduled-time">
+        <button type="submit">Add</button>
+    </form>
+    <div>
+        <label for="priority-filter">Filter:</label>
+        <select id="priority-filter">
+            <option value="all">All</option>
+            <option value="urgent">Urgent</option>
+        </select>
+    </div>
+    <ul id="todo-list"></ul>
+</div>
+<div id="calendar"></div>
+<div id="chatbot-container"> <!-- New container for chatbot -->
+    <div id="chatbot"></div> <!-- Chatbot interface will be rendered here -->
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.0/core/main.min.js"></script>
+<script src="script.js"></script>
+<script src="chatbot.js"></script> <!-- New JavaScript file for chatbot -->
+</body>
+</html>
+
+<!--sk-proj-uvTc8aYBN1KLCgqYjyecT3BlbkFJwwLoGqsl7SGcVbholZK3 -->
